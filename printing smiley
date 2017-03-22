@@ -1,0 +1,109 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    system("COLOR 3F");
+    int i, j;
+    printf("\n\n\n\n\n\n\n");
+    for(i=0; i<=20; i++){
+            printf("\t\t\t\t\t\t\t");
+        for(j=0; j<=20; j++){
+            if(i==0|| i==20){
+                if(j>=6 && j<=14){
+                printf("~M$`");
+                }
+                else{
+                printf("  ");
+            }
+
+            }
+            if(i>=5 && i<=15){
+
+                if(j==0 || (j==3 && (i==6 || i==7 || i==8 || i==12)) || (j==13 && (i==6 || i==7 || i==8 || i==12)) || j==18){
+
+                    printf("##");
+
+                }
+
+
+                else if((j==15 || j==14) && (i==6 || i==7 || i==8 || i==12)) {
+                    printf("");
+                    }
+                else if(j==10  && (i==6 || i==7 || i==8 || i==12 || i==13)) {
+                    printf("  ");
+                    }
+                else if(i==13 && (j==17 || j==15)){
+                    printf("");
+                }
+                else if((j==17 ||j==5 || j==6 || j==7 || j==8 || j==9 || j==10)&& (i!=6 && i!=7 && i!=8 && i!=12 && i!=13)){
+                    printf("  ");
+                }
+                else if(i==13 && j==6){
+                    printf("");
+                }
+                else if(i==13 && j==11){
+                    printf("        ");
+                }
+
+                else if(i==13 && (j==4 || j==12) ){
+                    printf("##");
+                }
+                else if(i==14 && (j==17 || j==16 || j==15)){
+                printf("");
+            }
+                else if(i==15 &&( j==16 || j==17 || j==15)){
+                    printf("");
+                }
+                else if(i==14 && j==11){
+                            printf("##");
+                        }
+                else if( i==14 && j==2){
+
+                }
+                else{
+                        printf("    ");
+                }
+
+            }
+            if(i==14 && j==6){
+                    printf("##");
+                }
+            if(i==14 && j==7){
+                printf("          ");
+            }
+            if(i==14 && j==15){
+                printf("  ");
+            }
+            if (i==15 &&(j==7 || j==8 || j==9 || j==6)){
+                printf("##");
+            }
+            if(i==1 || i==19){
+                if(j==3 || j==16){
+                    printf("MW");
+                }
+                else{
+                    printf("   ");
+                }
+            }
+            if(i==2 || i==18){
+                if(j==2 || j==17){
+                    printf("MW");
+                }
+                else{
+                    printf("   ");
+                }
+            }
+            if(i==3 || i==17){
+                if(j==1 || j==18){
+                    printf("MW");
+                }
+                else{
+                    printf("   ");
+                }
+            }
+
+        }
+        printf("\n");
+    }
+    return 0;
+}
